@@ -24,5 +24,5 @@ const Singleton = (function () {
 const ProcessManager = Singleton.getInstance()
 const ProcessManager2 = Singleton.getInstance()
 
-console.log(ProcessManager)
+console.log(typeof ProcessManager)
 console.log(ProcessManager === ProcessManager2)
