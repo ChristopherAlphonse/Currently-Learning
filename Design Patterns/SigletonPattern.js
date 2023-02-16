@@ -1,28 +1,28 @@
 function Process(state) {
-  this.state = state;
+  this.state = state
 }
 
 const Singleton = (function () {
   function ProcessManager() {
-    this.numProcess = 0;
+    this.numProcess = 0
   }
-  let instancePManager;
+  let instancePManager
   function createProcessManager() {
-    instancePManager = new ProcessManager();
-    return instancePManager;
+    instancePManager = new ProcessManager()
+    return instancePManager
   }
   return {
     getInstance: function () {
       if (!instancePManager) {
-        instancePManager = createProcessManager();
+        instancePManager = createProcessManager()
       }
-      return instancePManager;
+      return instancePManager
     },
-  };
-})();
+  }
+})()
 
-const ProcessManager = Singleton.getInstance();
-const ProcessManager2 = Singleton.getInstance();
+const ProcessManager = Singleton.getInstance()
+const ProcessManager2 = Singleton.getInstance()
 
-console.log(ProcessManager);
-console.log(ProcessManager === ProcessManager2);
+console.log(ProcessManager)
+console.log(ProcessManager === ProcessManager2)
