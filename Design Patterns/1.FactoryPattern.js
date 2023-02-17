@@ -1,4 +1,6 @@
-let t0 = performance.now()
+// What is the Factory design pattern?
+// The factory pattern is a creational design pattern that uses factory methods to create objects — rather than by calling a constructor.
+
 function Developer(name) {
   this.name = name
   this.job = 'Developer'
@@ -39,5 +41,3 @@ employees.push(employeeFactory.create('damion', 2))
 employees.forEach((worker) => {
   intro.call(worker)
 })
-let t1 = performance.now()
-console.log(t1 - t0)

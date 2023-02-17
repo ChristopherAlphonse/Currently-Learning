@@ -1,3 +1,6 @@
+// What is the Singleton design pattern?
+// The Singleton pattern allows you to limit the number of instances of a particular object to one. This single instance is called the singleton. Singletons reduce the need for global variables which is particularly important in JavaScript because it limits namespace pollution and associated risk of name collisions.
+
 function Process(state) {
   this.state = state
 }
