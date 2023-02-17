@@ -24,13 +24,12 @@ Subject.prototype = {
 const subject = new Subject()
 
 function Observer1() {
-  console.log('User 1 is subscribed')
+  console.log('Observer 1 Triggered')
 }
 function Observer2() {
-  console.log('User 2 is subscribed')
+  console.log('Observer 2 Triggered')
 }
 
 subject.subscribe(Observer1)
 subject.subscribe(Observer2)
-subject.unsubscribe(Observer2)
 subject.trigger()
